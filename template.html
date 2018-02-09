@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>SB Email Template</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,600">
+		<style type="text/css">
+			body, 
+			#bodyTable,
+			#bodyCell {
+				width: 100% !important;
+				height: 100% !important; 
+				margin: 0;
+				padding: 0;
+				color: #1f1f20;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+			}
+			table {
+				border-collapse: collapse;
+			}
+			img, 
+			a img {
+				border: 0; 
+				outline: none; 
+				text-decoration: none;
+			}
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				margin: 0;
+				padding: 0;
+			}
+			p {
+				margin: 1em 0;
+			}
+			a {
+				color: #d10076;
+				text-decoration: underline;
+			}
+			a:hover,
+			a:focus {
+				text-decoration: none;
+			}
+			.ReadMsgBody {
+				width: 100%;
+			}
+			.ExternalClass {
+				width: 100%;
+			}
+			.ExternalClass, 
+			.ExternalClass p, 
+			.ExternalClass span, 
+			.ExternalClass font, 
+			.ExternalClass td, 
+			.ExternalClass div {
+				line-height: 100%;
+			} 
+			table, 
+			td {
+				mso-table-lspace: 0pt; 
+				mso-table-rspace: 0pt;
+			}
+			#outlook a {
+				padding: 0;
+			}
+			img {
+				-ms-interpolation-mode: bicubic;
+			}
+			body, 
+			table, 
+			td, 
+			p, 
+			a, 
+			li, 
+			blockquote {
+				-ms-text-size-adjust: 100%; 
+				-webkit-text-size-adjust: 100%;
+			}
+			.flexibleContainerCell {
+				/*padding-top: 20px; 
+				padding-right: 20px; 
+				padding-left: 20px;*/
+			}
+			.flexibleImage{
+				height: auto;
+			}
+			.bottomShim{
+				padding-bottom: 20px;
+			}
+			.imageContent, 
+			.imageContentLast{
+				padding-bottom: 20px;
+			}
+			.nestedContainerCell{
+				padding-top: 20px; 
+				padding-right: 20px; 
+				padding-left: 20px;
+			}
+			.header {
+				font-family: Montserrat, Helvetica, Arial, sans-serif;
+				font-weight: 300;
+			}
+			.header strong {
+				font-weight: 600;
+			}
+			.masthead {
+				color: #fff;
+				background-color: #5832ab;
+			}
+			.masthead a {
+				color: #fff;
+			}
+			.masthead__title {
+				padding: 80px 20px 20px;
+				font-size: 28px;
+				text-transform: lowercase;
+			}
+			.masthead__preheader {
+				padding: 10px 20px;
+				font-size: 12px;
+			}
+			.masthead__tag {
+				padding-bottom: 20px;
+				font-style: italic;
+			}
+			.footer {
+				color: #c9c9d0;
+				background-color: #1f1f20;
+				font-size: 12px;
+			}
+			.footer a {
+				color: #c9c9d0;
+			}
+			.footer__body {
+				padding: 20px 0;
+				line-height: 1.5;
+			}
+			.content {
+				padding-top: 10px;
+				padding-bottom: 10px;
+				font-size: 16px;
+				line-height: 1.5;
+			}
+			.event {
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			.event__body {
+				padding-left: 10px;
+				line-height: 1.5;
+			}
+			.event__title {
+				font-weight: 600;
+			}
+			.event__location {
+
+			}
+			.event__type {
+				font-size: 14px;
+				font-style: italic;
+			}
+			.date {
+
+			}
+			.date__date {
+				padding: 5px 0;
+				border: 2px solid black;
+				font-size: 26px;
+				font-weight: 600;
+			}
+			.date__month {
+				padding: 2px 0;
+				border: 2px solid black;
+				font-size: 18px;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+			.date__time {
+				padding-top: 5px;
+				font-size: 14px;
+			}
+			.divider {
+				background-color: #5832ab;
+			}
+			@media only screen and (max-width: 480px) {
+				body {
+					width: 100% !important; 
+					min-width: 100% !important;
+				}
+				table[id="emailBody"],
+				table[class*="flexibleContainer"] {
+					width:100% !important;
+				}
+				img[class="flexibleImage"] {
+					height: auto !important; 
+					width: 100% !important;
+				}
+			}
+		</style>
+		<!--[if mso 12]>
+				<style type="text/css">
+					.flexibleContainer { display:block !important; width:100% !important; }
+				</style>
+		<![endif]-->
+		<!--[if mso 14]>
+				<style type="text/css">
+					.flexibleContainer { display:block !important; width:100% !important; }
+				</style>
+		<![endif]-->
+	</head>
+	<body>
+		<center>
+			<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+				<tr>
+					<td align="center" valign="top" id="bodyCell">
+						<table border="0" cellpadding="0" cellspacing="0" width="100%" id="emailBody">
+
+							<!-- HEADER BLOCK // -->
+							<tr>
+								<td align="center" valign="top" class="masthead">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" class="flexibleContainer">
+										<tr>
+											<td align="center" valign="top" width="100%" class="flexibleContainerCell">
+												<table cellpadding="0" cellspacing="0" border="0" width="100%">
+													<tr>
+														<td align="center" valign="middle" class="masthead__preheader">
+															<a href="#">View this email in your browser</a>
+														</td>
+													</tr>
+													<tr>
+														<td align="center" valign="bottom">
+															<h1 class="header masthead__title">
+																<strong>Severn Bronies</strong>
+																meet update
+															</h1>
+														</td>
+													</tr>
+													<tr>
+														<td align="center" valign="middle" class="masthead__tag">
+															The one where Rachel becomes a brony
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<!-- // HEADER BLOCK -->
+
+							<!-- CONTENT BLOCK // -->
+							<tr>
+								<td align="center" valign="top">
+									<table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
+										<tr>
+											<td align="left" valign="top" width="500" class="flexibleContainerCell content">
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ad dolorum maxime eligendi optio cumque ullam ipsam natus recusandae cupiditate deleniti, veniam obcaecati delectus porro quos dolore dolor fugiat vel.</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad odit alias provident, enim consequatur id, magnam ipsum! Veritatis, modi. Animi eaque distinctio molestiae cum, quaerat labore. Doloribus eos, maxime assumenda!</p>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<!-- // CONTENT BLOCK -->
+
+							<!-- EVENT BLOCK // -->
+							<tr>
+								<td align="center" valign="top">
+									<table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer event">
+										<tr>
+											<td width="80" align="center" valign="top">
+												<table border="0" cellpadding="0" cellspacing="0" width="100%" class="date">
+													<tr>
+														<td align="center" valign="top" class="date__date">22</td>
+													</tr>
+													<tr>
+														<td align="center" valign="top" class="date__month">Sep</td>
+													</tr>
+													<tr>
+														<td align="center" valign="top" class="date__time">11:30am</td>
+													</tr>
+												</table>
+											</td>
+											<td align="left" valign="top" width="" class="flexibleContainerCell event__body">
+												<h3 class="header event__title">Games Bronies Play #59</h3>
+												<div class="event__location">Bristol</div>
+												<div class="event__type">Games Bronies Play, Severn Bronies Special</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<!-- // EVENT BLOCK -->
+
+							<!-- DIVIDER BLOCK // -->
+							<tr>
+								<td align="center" valign="top">
+									<table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
+										<tr>
+											<td height="20"></td>
+										</tr>
+										<tr>
+											<td height="2" class="divider"></td>
+										</tr>
+										<tr>
+											<td height="20"></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<!-- // DIVIDER BLOCK -->
+
+							<!-- IMAGE BLOCK // -->
+							<tr>
+								<td align="center" valign="top">
+									<table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
+										<tr>
+											<td class="imageContent"><img src="http://placeponi.es/g/1120/800" width="500" class="flexibleImage" style="max-width:500px;" /></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<!-- // IMAGE BLOCK -->
+
+							<!-- FOOTER BLOCK // -->
+							<tr>
+								<td align="center" valign="top" class="footer">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" class="flexibleContainer">
+										<tr>
+											<td align="center" valign="top" width="100%" class="flexibleContainerCell footer__body">
+												<p>
+													&copy; 2018 Severn Bronies Ltd. All rights reserved.<br>
+													<a href="#">Change your email preferences</a> or <a href="#">unsubscribe</a>
+												</p>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<!-- // FOOTER BLOCK -->
+
+						</table>
+					</td>
+				</tr>
+		</table>
+	</body>
+</html>
