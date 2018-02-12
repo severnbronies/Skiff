@@ -280,7 +280,7 @@
 														<td align="center" valign="top" class="date__month" mc:edit="event_month" mc:label="Event month">Sep</td>
 													</tr>
 													<tr>
-														<td align="center" valign="top" class="date__time" mc:edit="event_time" mc:label="Event start time">11:00am</td>
+														<td align="center" valign="top" class="date__time" mc:edit="event_time" mc:label="Event start time">11am</td>
 													</tr>
 												</table>
 											</td>
@@ -295,6 +295,20 @@
 							</tr>
 							<!-- // EVENT BLOCK -->
 
+							<!-- CONTENT BLOCK // -->
+							<tr mc:repeatable="content_block">
+								<td align="center" valign="top">
+									<table border="0" cellpadding="0" cellspacing="0" width="500" class="flexibleContainer">
+										<tr>
+											<td align="left" valign="top" width="500" class="flexibleContainerCell content" mc:edit="content" mc:label="Content">
+												<p>Sign off and more info</p>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<!-- // CONTENT BLOCK -->
+
 							<!-- FOOTER BLOCK // -->
 							<tr>
 								<td height="15"></td>
@@ -305,7 +319,7 @@
 										<tr>
 											<td align="center" valign="top" width="100%" class="flexibleContainerCell footer__body">
 												<p>
-													<span mc:edit="">&copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*. All rights reserved.<br>
+													<span mc:edit="copyright">&copy; *|CURRENT_YEAR|* Severn Bronies Ltd. All rights reserved.<br>
 													<a href="*|UPDATE_PROFILE|*">Change your email preferences</a> or <a href="*|UNSUB|*">unsubscribe</a>
 												</p>
 												*|IF:REWARDS|*<p>*|REWARDS|*</p>*|END:IF|*
