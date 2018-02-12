@@ -85,9 +85,6 @@
 				padding-right: 20px; 
 				padding-left: 20px;*/
 			}
-			.flexibleImage{
-				height: auto;
-			}
 			.bottomShim{
 				padding-bottom: 20px;
 			}
@@ -145,6 +142,9 @@
 				font-size: 16px;
 				line-height: 1.5;
 			}
+			.content img {
+				height: auto;
+			}
 			.event {
 				margin-top: 10px;
 				margin-bottom: 10px;
@@ -195,7 +195,7 @@
 				table[class*="flexibleContainer"] {
 					width:100% !important;
 				}
-				img[class="flexibleImage"] {
+				[class*="content"] img {
 					height: auto !important; 
 					width: 100% !important;
 				}
